@@ -1,0 +1,50 @@
+import javax.swing.JFrame;
+
+import java.awt.Button;
+
+import javax.swing.JButton;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+
+public class Main extends JFrame{
+public Main(){
+setLayout(null);
+setSize(400, 450);
+setTitle("FaceMatch");
+setLocationRelativeTo(null);
+setVisible(true);
+
+JMenuBar menuBar = new JMenuBar();
+setJMenuBar(menuBar);
+
+JButton perfilMenu = new JButton ("Perfil");
+JButton procuraMenu = new JButton ("Procura");
+JButton mensagemMenu = new JButton("Menssagem");
+
+menuBar.add(perfilMenu);
+menuBar.add(procuraMenu);
+menuBar.add(mensagemMenu);
+
+JButton esquerda = new JButton();
+JButton direita  = new JButton();
+ esquerda.setBounds(20, 160, 50, 50);
+ add (esquerda);
+ direita.setBounds(330, 160, 50, 50);
+ add (direita);
+
+
+JButton like =new JButton();
+JButton dLike = new JButton();
+JButton amizade = new JButton();
+like.setBounds(20, 300, 50, 50);
+dLike.setBounds(330, 300, 50, 50);
+amizade.setBounds(170, 300, 50, 50);
+add(like);
+add(dLike);
+add (amizade);
+}
+
+  public static void main(String[] args) {
+    new Main();
+  }
+}
